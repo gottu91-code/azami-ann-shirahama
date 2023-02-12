@@ -1,0 +1,40 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+.l-header {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.l-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-header__reservation {
+  color: $main-white;
+  border: 1px solid currentColor;
+  padding: 0.6em 1.6em;
+  transition-duration: .3s;
+  @extend .border-radius;
+  @include hover {
+    background-color: $main-white;
+    color: $main-black;
+    border-color: $main-white;
+  }
+}
+
+.l-header__hamburgerButton {
+  width: 60px;
+  & > * + * {
+    margin-top: 6px;
+  }
+  span {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+  }
+}

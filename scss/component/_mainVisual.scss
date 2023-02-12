@@ -1,0 +1,76 @@
+@use "../variables" as *;
+
+.c-mainVisual {
+  position: relative;
+  z-index: 0;
+}
+
+.c-mainVisual__sliderBox {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.c-mainVisual__slider {
+  height: 100%;
+  .slick-list {
+    height: 100%;
+  }
+  .slick-track {
+    height: 100%;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.c-mainVisual__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 500;
+  color: $main-white;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.7em;
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.c-mainVisual_scroll {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  translate: -50% 0;
+  font-size: 34px;
+  width: 1em;
+  height: 1em;
+  border: 1px solid $main-white;
+  border-radius: 50%;
+  a {
+    display: grid;
+    place-content: center;
+    height: 100%;
+    span {
+      display: block;
+      width: 0.3em;
+      height: 0.3em;
+      border-bottom: 1px solid $main-white;
+      border-right: 1px solid $main-white;
+      rotate: 45deg;
+      translate: 0 -2px;
+    }
+  }
+}

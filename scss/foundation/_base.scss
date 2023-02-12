@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho:wght@400;&display=swap');
+
+body {
+  margin: 0;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt";
+  font-size: 16px;
+  font-family: 'BIZ UDMincho', serif;
+  font-weight: 400;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+  font-weight: 400;
+}
