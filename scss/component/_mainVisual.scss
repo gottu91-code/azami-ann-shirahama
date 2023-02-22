@@ -3,10 +3,13 @@
 .c-mainVisual {
   position: relative;
   z-index: 0;
+  height: 100vh;
+  min-height: 900px;
+  max-height: 85vw;
 }
 
 .c-mainVisual__sliderBox {
-  height: 100vh;
+  height: 100%;
   position: relative;
   z-index: 0;
   &::before {

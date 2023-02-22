@@ -1,0 +1,22 @@
+.c-concept {
+    padding: 100px 0;
+}
+
+.p-concept-text-box {
+    margin: 0 auto;
+    writing-mode: vertical-rl;
+}
+
+.c-concept-text {
+    font-size: 1.2rem;
+    letter-spacing: .35em;
+    line-height: 2;
+}
+
+.p-concept-text-container > * + * {
+    margin-right: 40px;
+}
+
+.p-concept-text-container {
+    margin-right: 60px;
+}

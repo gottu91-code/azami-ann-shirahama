@@ -7,3 +7,30 @@ $('.js-mainVisual-slider').slick({
   autoplay: true,
   autoplaySpeed: 3000,
 });
+
+$('.js-room-slider').slick({
+  infinite: true,
+  dots: false,
+  speed: 300,
+  slidesToShow: 4
+});
+
+function observeMainVisual() {
+  const header = document.querySelector('header');
+  function callback(entries) {
+    if(entries[0].isIntersecting) {
+      header.classList.remove('active');
+    } else {
+      header.classList.add('active');
+    }
+  }
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1,
+  }
+  const observer = new IntersectionObserver(callback, options);
+  const target = document.querySelector('.js-intersection-mainVisual');
+  observer.observe(target);
+}
+observeMainVisual();
