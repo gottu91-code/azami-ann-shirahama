@@ -41,7 +41,7 @@
     border-color: $main-white;
   }
   @include sp {
-    display: none;
+    font-size: 0.8rem;
   }
 }
 

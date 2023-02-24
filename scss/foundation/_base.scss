@@ -1,10 +1,14 @@
-@use '..//variables' as *;
+@use '../variables' as *;
+@use "../mixin" as *;
 
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap');
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  @include sp {
+    font-size: 15px;
+  }
 }
 
 body {
@@ -15,6 +19,7 @@ body {
   font-family: 'BIZ UDMincho', serif;
   font-weight: 400;
   color: $main-black;
+  
 }
 
 button {
@@ -43,4 +48,8 @@ h1,h2,h3,h4 {
 
 .svg_container {
   display: none;
+}
+
+img {
+  vertical-align: bottom;
 }

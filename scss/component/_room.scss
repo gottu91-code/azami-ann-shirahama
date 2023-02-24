@@ -1,3 +1,4 @@
+@use "../variables" as *;
 @use "../mixin" as *;
 
 .c-room {
@@ -72,7 +73,6 @@
             }
         }
     }
-
 }
 
 .c-room-slider-box {
@@ -89,6 +89,7 @@
         margin: 0 6px;
     }
     .slick-arrow {
+        color: $main-black;
         position: absolute;
         top: 50%;
         text-indent: -9999px;
@@ -139,14 +140,17 @@
     @include sp {
         .slick-dots {
             display: flex;
-            column-gap: 12px;
+            column-gap: 16px;
             justify-content: center;
             margin-top: 10px;
             li {
-                width: 13px;
-                height: 13px;
+                width: 15px;
+                height: 15px;
                 background-color: #eee;
                 border-radius: 50%;
+                &.slick-active {
+                    background-color: #a4a4a4;
+                }
                 button {
                     text-indent: -9999px;
                     width: 100%;
