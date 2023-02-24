@@ -1,11 +1,23 @@
+@use "../mixin" as *;
+
 .c-room {
-    margin-top: 40px;
+    background-color: #fafafa;
+    padding: 150px 0;
+    @include sp {
+        padding: 100px 0;
+    }
 }
 
 .p-room-text-box {
     display: grid;
-    grid-template-columns: 200px 2fr 1.5fr;
+    grid-template-columns: minmax(150px ,0.55fr) 2fr 1.5fr;
     column-gap: 30px;
+    @include sp {
+        grid-template-columns: 1fr;
+        & > * + * {
+            margin-top: 24px;
+        }
+    }
 }
 
 .p-information-item {
@@ -14,30 +26,48 @@
         border-bottom: 1px solid #eee;
         padding: 0 0 0.7em;
         margin-bottom: 0.7em;
+        @include sp {
+            font-size: 1.1rem;
+        }
     }
     ul {
         display: flex;
         column-gap: 10px;
-        row-gap: 12px;
-    }
-    .list {
-        ul {
-            flex-wrap: wrap;
+        row-gap: 8px;
+        flex-wrap: wrap;
+        li {
+            line-height: 1.6;
+            @include sp {
+                font-size: 0.9rem;
+            }
         }
     }
     .link {
         ul {
             li {
-                border: 1px solid currentColor;
                 flex-grow: 1;
                 border-radius: 3px;
                 a {
-                    display: block;
+                    border: 1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 10px;
                     height: 100%;
                     text-align: center;
-                    padding: 0.5em 0;
+                    padding: 0.5em 0.5em;
                     color: currentColor;
                     font-family: sans-serif;
+                    transition-duration: .3s;
+                    background-color: #fff;
+                    .icon_link {
+                        flex-shrink: 0;
+                        width: 1em;
+                    }
+
+                    @include hover {
+                        background-color: #eee;
+                    }
                 }
             }
         }
@@ -47,6 +77,11 @@
 
 .c-room-slider-box {
     margin-top: 40px;
+    position: relative;
+    z-index: 0;
+    @include sp {
+        margin-top: 30px;
+    }
 }
 
 .c-room-slider {
@@ -81,6 +116,9 @@
         &.slick-prev {
             left: 0;
             translate: -50% -50%;
+            @include sp {
+                translate:  -25% -50%;
+            }
             &::after {
                 rotate: -45deg;
                 translate: -50% -50%;
@@ -89,16 +127,33 @@
         &.slick-next {
             right: 0;
             translate: 50% -50%;
+            @include sp {
+                translate:  25% -50%;
+            }
             &::after {
                 rotate: 135deg;
                 translate: -50% -50%;
             }
         }
     }
-}
-
-.p-room-container {
-    & + & {
-        margin-top: 100px;
+    @include sp {
+        .slick-dots {
+            display: flex;
+            column-gap: 12px;
+            justify-content: center;
+            margin-top: 10px;
+            li {
+                width: 13px;
+                height: 13px;
+                background-color: #eee;
+                border-radius: 50%;
+                button {
+                    text-indent: -9999px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                }
+            }
+        }
     }
 }

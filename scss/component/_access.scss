@@ -1,0 +1,15 @@
+@use "../mixin" as *;
+
+.c-access {
+    margin-top: 150px;
+    @include sp {
+        margin-top: 100px;
+    }
+}
+
+.c-access-map {
+    height: 500px;
+    margin-top: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}

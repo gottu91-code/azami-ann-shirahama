@@ -1,0 +1,70 @@
+@use "../mixin" as *;
+
+.c-nearByFacilities {
+    margin-top: 150px;
+    @include sp {
+        margin-top: 80px;
+    }
+}
+
+.p-nearByFacilities-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 50px;
+    @include sp {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
+
+.p-nearByFacilities-list {
+    & > * + * {
+        margin-top: 30px;
+    }
+    @include sp {
+        & > * + * {
+            margin-top: 20px;
+        }
+    }
+}
+
+.c-nearByFacilities-item {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 25px;
+    background-color: #fafafa;
+    padding: 30px 24px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    @include tb {
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    .textBox {
+        .name {
+            border-bottom: 1px solid #eee;
+            padding: 0 0 1em;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            @include sp {
+                font-size: 1rem;
+            }
+        }
+        .text {
+            line-height: 1.5;
+            @include sp {
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .imgBox {
+        ul {
+            display: flex;
+            column-gap: 10px;
+            li {
+                overflow: hidden;
+                border-radius: 4px;
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @use "../variables" as *;
+@use "../mixin" as *;
 
 .c-mainVisual {
   position: relative;
@@ -6,6 +7,10 @@
   height: 100vh;
   min-height: 900px;
   max-height: 85vw;
+  @include sp {
+    min-height: auto;
+    max-height: none;
+  }
 }
 
 .c-mainVisual__sliderBox {
@@ -50,6 +55,9 @@
   letter-spacing: 0.7em;
   white-space: nowrap;
   font-size: 1.8rem;
+  @include sp {
+    font-size: 1.6rem;
+  }
 }
 
 .c-mainVisual_scroll {

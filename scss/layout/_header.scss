@@ -9,16 +9,23 @@
   z-index: 1000;
   padding: 30px 0;
   transition-duration: 0.6s;
+  @include sp {
+    padding: 20px 0;
+  }
 }
 
 .l-header.active {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.6);
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 .l-header__inner {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  @include sp {
+    justify-content: space-between;
+  }
 }
 
 .l-header__reservation {
@@ -26,11 +33,15 @@
   border: 1px solid currentColor;
   padding: 0.6em 1.6em;
   transition-duration: .3s;
+  margin-left: auto;
   @extend .border-radius;
   @include hover {
     background-color: $main-white;
     color: $main-black;
     border-color: $main-white;
+  }
+  @include sp {
+    display: none;
   }
 }
 
@@ -43,5 +54,16 @@
     display: block;
     height: 1px;
     background-color: #fff;
+  }
+}
+
+.l-header-logo {
+  .name {
+    color: $main-white;
+    font-size: 1.3rem;
+    letter-spacing: 0.2em;
+    @include sp {
+      font-size: 1rem;
+    }
   }
 }

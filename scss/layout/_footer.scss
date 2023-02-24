@@ -1,0 +1,22 @@
+@use "../mixin" as *;
+
+.l-footer {
+    margin-top: 200px;
+    padding: 0 0 30px;
+    @include sp {
+        margin-top: 100px;
+    }
+}
+
+.p-footer-container {
+    text-align: center;
+}
+
+.c-footer-text {
+    & + & {
+        margin-top: 10px;
+    }
+    @include sp {
+        font-size: 10px;
+    }
+}

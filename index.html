@@ -9,22 +9,34 @@
 	<link rel="stylesheet" href="./css/style.min.css">
 	<script src="./lib/jquery-3.6.3.min.js"></script>
 	<script src="./lib/slick/slick.min.js"></script>
-	<!-- <link rel="stylesheet" href="./lib/slick/slick-theme.css"> -->
 	<link rel="stylesheet" href="./lib/slick/slick.css">
 	<script defer src="./js/main.js"></script>
 </head>
 <body>
+	<div class="svg_container">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<symbol viewBox="0 0 512 512" id="icon_link">
+				<path class="st0" d="M96,0v416h416V0H96z M472,376H136V40h336V376z"></path>
+				<polygon class="st0" points="40,472 40,296 40,136 40,96 0,96 0,512 416,512 416,472 376,472 "></polygon>
+				<polygon class="st0" points="232.812,312.829 350.671,194.969 350.671,279.766 390.671,279.766 390.671,126.688 237.594,126.688 237.594,166.688 322.39,166.688 204.531,284.547"></polygon>
+			</symbol>
+		</svg>
+	</div>
+
 	<header class="l-header">
 		<div class="c-wrapper">
 			<div class="l-header__inner">
+				<div class="l-header-logo">
+					<p class="name">あざみ庵 白浜</p>
+				</div>
 				<a href="/" class="l-header__reservation">
 					ご宿泊予約
 				</a>
-				<button class="l-header__hamburgerButton">
+				<!-- <button class="l-header__hamburgerButton">
 					<span></span>
 					<span></span>
 					<span></span>
-				</button>
+				</button> -->
 			</div>
 		</div>
 	</header>
@@ -55,7 +67,7 @@
 		<section class="c-concept" id="concept">
 			<div class="p-concept-text-box">
 				<div class="c-title-box">
-					<div class="c-line__accent">
+					<div class="c-line__accent _horizontal">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -84,7 +96,7 @@
 
 		<section class="c-room">
 			<div class="c-wrapper">
-				<div class="p-room-container">
+				<div class="p-container">
 					<div class="p-room-text-box">
 						<div class="c-title-box">
 							<div class="c-line__accent">
@@ -118,8 +130,22 @@
 							<h3 class="title">宿泊予約</h3>
 							<div class="link">
 								<ul>
-									<li><a href="">airbnb</a></li>
-									<li><a href="">Booking.com</a></li>
+									<li>
+										<a href="">
+											airbnb
+											<svg viewBox="0 0 512 512" class="icon_link">
+												<use xlink:href="#icon_link"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Booking.com
+											<svg viewBox="0 0 512 512" class="icon_link">
+												<use xlink:href="#icon_link"></use>
+											</svg>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -128,44 +154,54 @@
 						<ul class="c-room-slider js-room-slider">
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image1.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image2.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image3.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image4.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image5.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image6.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/301/image7.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/301/image8.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/301/image9.jpg" alt="">
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="p-room-container">
+				<div class="p-container">
 					<div class="p-room-text-box">
 						<div class="c-title-box">
 							<div class="c-line__accent">
@@ -199,8 +235,22 @@
 							<h3 class="title">宿泊予約</h3>
 							<div class="link">
 								<ul>
-									<li><a href="">airbnb</a></li>
-									<li><a href="">Booking.com</a></li>
+									<li>
+										<a href="">
+											airbnb
+											<svg viewBox="0 0 512 512" class="icon_link">
+												<use xlink:href="#icon_link"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											Booking.com
+											<svg viewBox="0 0 512 512" class="icon_link">
+												<use xlink:href="#icon_link"></use>
+											</svg>
+										</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -209,37 +259,47 @@
 						<ul class="c-room-slider js-room-slider">
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image1.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image2.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image3.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image4.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image5.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image6.jpg" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="inner">
-									<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									<img src="./images/302/image7.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image8.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image9.jpg" alt="">
 								</div>
 							</li>
 						</ul>
@@ -247,6 +307,107 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="c-nearByFacilities">
+			<div class="c-wrapper">
+				<div class="p-nearByFacilities-container">
+					<div class="c-title-box">
+						<div class="c-line__accent">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<h2 class="c-title__text">
+							ご近所さん
+						</h2>
+					</div>
+					<div class="p-nearByFacilities-list">
+						<div class="c-nearByFacilities-item">
+							<div class="textBox">
+								<p class="name">施設名</p>
+								<p class="text">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+							</div>
+							<div class="imgBox">
+								<ul>
+									<li>
+										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									</li>
+									<li>
+										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item">
+							<div class="textBox">
+								<p class="name">施設名</p>
+								<p class="text">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+							</div>
+							<div class="imgBox">
+								<ul>
+									<li>
+										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									</li>
+									<li>
+										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="c-access">
+			<div class="c-wrapper">
+				<div class="p-container">
+					<div class="p-room-text-box">
+						<div class="c-title-box">
+							<div class="c-line__accent">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<h2 class="c-title__text">
+								アクセス
+							</h2>
+						</div>
+						<div class="p-information-item">
+							<h3 class="title">あざみ庵 白浜</h3>
+							<div class="list">
+								<ul>
+									<li>〒649-2211 和歌山県西牟婁郡白浜町2670-6</li>
+									<li>白浜駅から車で8分</li>
+								</ul>
+							</div>
+						</div>
+						<div class="p-information-item">
+							<h3 class="title">周辺施設</h3>
+							<div class="list">
+								<ul>
+									<li>アドベンチャーワールドまで車で8分</li>
+									<li>とれとれ市場まで車で5分</li>
+									<li>白良浜まで車で3分</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="c-access-map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1347823321908!2d135.35165396662234!3d33.679574030709034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a16ebcd6c51f%3A0xe2110ac85d86c37f!2z44GC44GW44G_5bq155m95rWc!5e0!3m2!1sja!2sjp!4v1677146815735!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<footer class="l-footer">
+		<div class="c-wrapper">
+			<div class="p-footer-container">
+				<p class="c-footer-text">運営会社: アザミリゾート株式会社</p>
+				<p class="c-footer-text">©︎ 2023 Azami Resort Co.,Ltd</p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
