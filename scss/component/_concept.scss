@@ -10,24 +10,30 @@
 .p-concept-text-box {
     margin: 0 auto;
     writing-mode: vertical-rl;
-    @include sp {
+    text-orientation: upright;
+    @include tb {
         writing-mode: horizontal-tb;
         width: fit-content;
+    }
+    @include sp {
+        width: 90%;
     }
 }
 
 .c-concept-text {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     letter-spacing: .35em;
     line-height: 2;
+    white-space: nowrap;
     @include sp {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.25em;
     }
 }
 
 .p-concept-text-container > * + * {
     margin-right: 40px;
-    @include sp {
+    @include tb {
         margin-right: 0;
         margin-top: 16px;
     }
@@ -35,7 +41,7 @@
 
 .p-concept-text-container {
     margin-right: 60px;
-    @include sp {
+    @include tb {
         margin-right: 0;
         margin-top: 30px;
     }

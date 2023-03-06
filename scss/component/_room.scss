@@ -140,12 +140,12 @@
     @include sp {
         .slick-dots {
             display: flex;
-            column-gap: 16px;
+            column-gap: 12px;
             justify-content: center;
             margin-top: 10px;
             li {
-                width: 15px;
-                height: 15px;
+                width: 12px;
+                height: 12px;
                 background-color: #eee;
                 border-radius: 50%;
                 &.slick-active {

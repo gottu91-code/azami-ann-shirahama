@@ -13,10 +13,8 @@
 }
 
 .c-footer-text {
+    font-size: 10px;
     & + & {
         margin-top: 10px;
-    }
-    @include sp {
-        font-size: 10px;
     }
 }

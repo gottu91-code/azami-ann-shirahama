@@ -10,6 +10,8 @@
 	<script src="./lib/jquery-3.6.3.min.js"></script>
 	<script src="./lib/slick/slick.min.js"></script>
 	<link rel="stylesheet" href="./lib/slick/slick.css">
+	<link rel="stylesheet" href="./css/sal.css">
+	<script defer src="./js/sal.js"></script>
 	<script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -25,7 +27,7 @@
 
 	<header class="l-header">
 		<div class="c-wrapper">
-			<div class="l-header__inner">
+			<div class="l-header__inner" data-sal="slide-down" style="--sal-duration: 0.8s;">
 				<div class="l-header-logo">
 					<p class="name">あざみ庵 白浜</p>
 				</div>
@@ -49,10 +51,15 @@
 					<li>
 						<img src="./images/mainVisual_slide_img_3.jpg" alt="">
 					</li>
+					<li>
+						<img src="./images/mainVisual_slide_img_4.jpg" alt="">
+					</li>
 				</ul>
 			</div>
-			<h1 class="c-mainVisual__title">あざみ庵 白浜</h1>
-			<div class="c-mainVisual_scroll">
+			<h1 class="c-mainVisual__title" data-sal="fade" style="--sal-duration: 2s; --sal-delay: 0.2s">
+				<span class="inner">あざみ庵<span class="area">白浜</span></span>
+			</h1>
+			<div class="c-mainVisual_scroll" data-sal="slide-down" style="--sal-duration: 0.8s; --sal-delay: 1s">
 				<a href="#concept">
 					<span class="c-mainVisual_scroll__arrow"></span>
 				</a>
@@ -61,7 +68,7 @@
 
 		<section class="c-concept" id="concept">
 			<div class="p-concept-text-box">
-				<div class="c-title-box">
+				<div class="c-title-box" data-sal="slide-up" style="--sal-duration: 2.5s;">
 					<div class="c-line__accent _horizontal">
 						<span></span>
 						<span></span>
@@ -70,20 +77,34 @@
 					<h2 class="c-title__text">白浜の地で癒しを</h2>
 				</div>
 				<div class="p-concept-text-container">
-					<p class="c-concept-text">
-						ここにコンセプト文章が入ります。<br>
-						ここにコンセプト文章が入ります。<br>
-						ここにコンセプト文章が入ります。<br>
+					<p class="c-concept-text" data-sal="slide-up" style="--sal-delay: 0.2s; --sal-duration: 2.5s;">
+						和歌山上富田町朝来<br>
+						『あざみ庵ASSOBO』に続き<br>
+						白浜にもあざみ庵白浜をオープンしました。<br>
 					</p>
-					<p class="c-concept-text">
-						ここにコンセプト文章が入ります。<br>
-						ここにコンセプト文章が入ります。<br>
-						ここにコンセプト文章が入ります。<br>
+					<p class="c-concept-text" data-sal="slide-up" style="--sal-delay: 0.4s; --sal-duration: 2.5s;">
+						元リゾートハウス暁として<br>
+						長年宿としての建物を今回<br>
+						アザミリゾートが<br>
+						リノベーションしました。<br>
 					</p>
-					<p class="c-concept-text">
-						ここにコンセプト文章が入ります。<br>
-						ここにコンセプト文章が入ります。<br>
-						ここにコンセプト文章が入ります。<br>
+					<p class="c-concept-text" data-sal="slide-up" style="--sal-delay: 0.6s; --sal-duration: 2.5s;">
+						あざみ庵白浜は玄関から<br>
+						紀州材の檜をふんだんに使い、<br>
+						坪庭がお出迎えします。<br>
+						10畳と6畳の紀州いぐさと<br>
+						龍神の杉板で作った<br>
+						テレビカウンターなどの<br>
+						楽しめる全2室の宿泊施設です。<br>
+					</p>
+					<p class="c-concept-text" data-sal="slide-up" style="--sal-delay: 0.8s; --sal-duration: 2.5s;">
+						白浜や田辺、上富田町朝来まで来て、<br>
+						『あざみ庵白浜』<br>
+						『あざみ庵ASSOBO』を利用していただき、<br>
+						その先のすさみや勝浦、串本、新宮などへの<br>
+						アクセスの拠点として<br>
+						和歌山を楽しむ場所に<br>
+						なっていただければ幸いです。<br>
 					</p>
 				</div>
 			</div>
@@ -91,7 +112,7 @@
 
 		<section class="c-room" id="room">
 			<div class="c-wrapper">
-				<div class="p-container">
+				<div class="p-container" data-sal="fade" style="--sal-duration: 2.5s;">
 					<div class="p-room-text-box">
 						<div class="c-title-box">
 							<div class="c-line__accent">
@@ -192,11 +213,31 @@
 									<img src="./images/301/image9.jpg" alt="">
 								</div>
 							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/301/image10.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/301/image11.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/301/image12.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/301/image13.jpg" alt="">
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="p-container">
+				<div class="p-container" data-sal="fade" style="--sal-duration: 2.5s;">
 					<div class="p-room-text-box">
 						<div class="c-title-box">
 							<div class="c-line__accent">
@@ -206,7 +247,7 @@
 							</div>
 							<h2 class="c-title__text">
 								お部屋
-								<span class="sub">301号室</span>
+								<span class="sub">302号室</span>
 							</h2>
 						</div>
 						<div class="p-information-item">
@@ -297,6 +338,31 @@
 									<img src="./images/302/image9.jpg" alt="">
 								</div>
 							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image10.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image11.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image12.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image13.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="inner">
+									<img src="./images/302/image14.jpg" alt="">
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -317,36 +383,179 @@
 						</h2>
 					</div>
 					<div class="p-nearByFacilities-list">
-						<div class="c-nearByFacilities-item">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
 							<div class="textBox">
-								<p class="name">施設名</p>
-								<p class="text">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+								<p class="name">天然温泉 長生の湯</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-42-3010">0739-42-3010</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町2763<br>
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
 							</div>
 							<div class="imgBox">
-								<ul>
-									<li>
-										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
-									</li>
-									<li>
-										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
-									</li>
-								</ul>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1125404221975!2d135.3574583!3d33.680150000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a123204b08b3%3A0x67108bb1b1f00e17!2z5aSp54S25rip5rOJIOmVt-eUn-OBrua5rw!5e0!3m2!1sja!2sjp!4v1678087194449!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
 							<div class="textBox">
-								<p class="name">施設名</p>
-								<p class="text">ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。</p>
+								<p class="name">めん吉</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:050-5869-0224">050-5869-0224</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町2763 長生の湯
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
 							</div>
 							<div class="imgBox">
-								<ul>
-									<li>
-										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
-									</li>
-									<li>
-										<img src="./images/mainVisual_slide_img_1.jpg" alt="">
-									</li>
-								</ul>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1102002436464!2d135.3572709!3d33.680210599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a13d31c4b91d%3A0xda4f4032a01d291b!2z44KB44KT5ZCJ!5e0!3m2!1sja!2sjp!4v1678087916499!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">居酒屋卯八</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-43-2387">0739-43-2387</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町2927−105
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.155338775155!2d135.3522806!3d33.6790417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a119c200e0eb%3A0xeacf9a023dafb6bd!2z5bGF6YWS5bGL5Y2v5YWr!5e0!3m2!1sja!2sjp!4v1678088021413!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">まる川</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-43-2211">0739-43-2211</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町2525−5
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1531106501066!2d135.3499714!3d33.6790994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11a34421d79%3A0xa6c5b68ed2ae6641!2z44G-44KL5bed!5e0!3m2!1sja!2sjp!4v1678088077568!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">ファミリーマート 白浜垣谷店</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-82-3848">0739-82-3848</a><br>
+										住所: 〒649-2200 和歌山県西牟婁郡白浜町 字垣谷 1289
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9859878131965!2d135.3529547!3d33.68342700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a118009f7b11%3A0x48a98ca4b29bfffa!2z44OV44Kh44Of44Oq44O844Oe44O844OIIOeZvea1nOWeo-iwt-W6lw!5e0!3m2!1sja!2sjp!4v1678088134864!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">キリンヤ</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-43-0894">0739-43-0894</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町3300−16
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9780436390174!2d135.3500841!3d33.683632700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11c31345e37%3A0xbdbda06bb4986bde!2z44Kt44Oq44Oz44Ok!5e0!3m2!1sja!2sjp!4v1678088190165!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">福菱/Kagerou Café/かげろうカフェ</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-42-3129">0739-42-3129</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町1279−3
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.965785505063!2d135.35421209999998!3d33.6839501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11f30df4923%3A0xf57c28e12630d7c6!2z56aP6I-xL0thZ2Vyb3UgQ2Fmw6kv44GL44GS44KN44GG44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1678088228644!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">FISHERMEN AND BUTCHER</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-43-3636">0739-43-3636</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.004189349915!2d135.3472879!3d33.682955699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a1ea710b797f%3A0x8a0ff7fc917a5402!2sFISHERMEN%20AND%20BUTCHER!5e0!3m2!1sja!2sjp!4v1678088265575!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">おたべやす</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-43-7208">0739-43-7208</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0018374135057!2d135.3473315!3d33.683016599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11d2252bd9b%3A0x13ed9310da06777c!2z44GK44Gf44G544KE44GZ!5e0!3m2!1sja!2sjp!4v1678088303509!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">大晏</p>
+								<p class="text">
+									<span class="info">
+										TEL: <a href="tel:0739-42-3245">0739-42-3245</a><br>
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0007869579367!2d135.3474322!3d33.6830438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11d2252bd9b%3A0x714388fa5852ca36!2z5aSn5pmP!5e0!3m2!1sja!2sjp!4v1678088361792!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+							<div class="textBox">
+								<p class="name">すゞめ</p>
+								<p class="text">
+									<span class="info">
+										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
+									</span>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
+									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+								</p>
+							</div>
+							<div class="imgBox">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.000311935504!2d135.347454!3d33.6830561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11d22696409%3A0xa08a79b27cd3c874!2z44GZ44Ke44KB!5e0!3m2!1sja!2sjp!4v1678088401453!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
 					</div>
@@ -354,7 +563,7 @@
 			</div>
 		</section>
 
-		<section class="c-access">
+		<section class="c-access" data-sal="fade" style="--sal-duration: 2.5s">
 			<div class="c-wrapper">
 				<div class="p-container">
 					<div class="p-room-text-box">

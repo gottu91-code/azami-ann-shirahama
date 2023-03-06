@@ -49,3 +49,5 @@ function observeMainVisual() {
   observer.observe(target);
 }
 observeMainVisual();
+
+sal();

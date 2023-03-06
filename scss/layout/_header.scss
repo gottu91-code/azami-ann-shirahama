@@ -34,6 +34,7 @@
   padding: 0.6em 1.6em;
   transition-duration: .3s;
   margin-left: auto;
+  white-space: nowrap;
   @extend .border-radius;
   @include hover {
     background-color: $main-white;
