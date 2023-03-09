@@ -22,6 +22,25 @@
 }
 
 .p-information-item {
+    @include pc {
+        &.only_sp {
+            display: none;
+        }
+    }
+    @include tb {
+        &.only_sp {
+            display: none;
+        }
+    }
+    @include sp {
+        &.only_sp {
+            display: block;
+            margin-top: 30px;
+        }
+        &.only_pc, &.only_tb {
+            display: none;
+        }
+    }
     .title {
         font-size: 1.2rem;
         border-bottom: 1px solid #eee;

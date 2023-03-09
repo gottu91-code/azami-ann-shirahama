@@ -7,10 +7,13 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 30px 0;
+  padding: 20px 0;
   transition-duration: 0.6s;
+  @include tb {
+    padding: 15px 0;
+  }
   @include sp {
-    padding: 20px 0;
+    padding: 10px 0;
   }
 }
 
@@ -60,11 +63,13 @@
 
 .l-header-logo {
   .name {
-    color: $main-white;
-    font-size: 1.3rem;
-    letter-spacing: 0.2em;
+    width: 250px;
+    display: block;
+    @include tb {
+      width: 220px;
+    }
     @include sp {
-      font-size: 1rem;
+      width: 150px;
     }
   }
 }

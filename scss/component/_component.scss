@@ -10,6 +10,12 @@
 .c-title__text {
   font-size: 1.6rem;
   letter-spacing: .35em;
+  @include tb {
+    font-size: 1.4rem;
+  }
+  @include sp {
+    font-size: 1.2rem;
+  }
   .sub {
     display: block;
     margin-top: 22px;
@@ -18,10 +24,6 @@
       display: inline-block;
       margin-top: 0;
     }
-  }
-
-  @include sp {
-    font-size: 1.3rem;
   }
 }
 
@@ -66,7 +68,7 @@
   }
   @include sp {
     & + & {
-      margin-top: 70px;
+      margin-top: 80px;
     }
   }
 }

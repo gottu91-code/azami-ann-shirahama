@@ -1,0 +1,64 @@
+@use "../mixin" as *;
+
+.loading {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    transition-duration: 2.2s;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    &.hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.loading_container {
+    width: 18vw;
+    @include tb {
+        width: 30vw;
+    }
+    @include sp {
+        width: 40vw;
+    }
+    .inner {
+        position: relative;
+        z-index: 0;
+    }
+}
+
+.loading_text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 52px;
+    transition-duration: 1.2s;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    font-size: 1.2rem;
+    letter-spacing: 0.4em;
+    white-space: nowrap;
+    &.show {
+        translate: -50% 42px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.loading_img {
+    transition-duration: 2s;
+    opacity: 0;
+    visibility: hidden;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}

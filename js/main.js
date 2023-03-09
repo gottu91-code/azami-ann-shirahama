@@ -1,11 +1,49 @@
-$('.js-mainVisual-slider').slick({
-  arrows: false,
-  fade: true,
-  infinite: true,
-  dots: false,
-  speed: 8000,
-  autoplay: true,
-  autoplaySpeed: 3000,
+const mainVisualSlider = $('.js-mainVisual-slider')
+  .on('init', () => {
+    $('.js-mainVisual-slider .slick-slide[data-slick-index="0"]').addClass("add-animation");
+  })
+  .slick({
+    arrows: false,
+    fade: true,
+    infinite: true,
+    dots: false,
+    speed: 5000,
+    autoplay: false,
+    autoplaySpeed: 4000,
+  })
+  .on({
+    beforeChange: function (event, slick, currentSlide, nextSlide) {
+      $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+      $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+    },
+    afterChange: function () {
+      $(".remove-animation", this).removeClass("remove-animation add-animation");
+    },
+  });
+
+new Promise((resolve, reject) => {
+  const img = document.getElementById('js_loading_img');
+  const tmp = new Image();
+  tmp.src = img.src;
+  tmp.addEventListener('load', () => {
+    img.classList.add('show');
+    document.getElementById('js_loading_text').classList.add('show');
+    setTimeout(() => resolve(), 2000);
+  });
+}).then(() => {
+  const img = document.getElementById('js_mainVisual_first_img');
+  const loading = document.getElementById('js_loading');
+  if(img.complete) {
+    loading.classList.add('hidden');
+    mainVisualSlider.slick('slickPlay');
+  } else {
+    const tmp = new Image();
+    tmp.src = img.src;
+    tmp.addEventListener('load', () => {
+      loading.classList.add('hidden');
+      mainVisualSlider.slick('slickPlay');
+    });
+  }
 });
 
 $('.js-room-slider').slick({

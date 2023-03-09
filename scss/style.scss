@@ -3,6 +3,7 @@
 
 @use "./layout/_header";
 
+@use "./component/loading";
 @use "./component/component";
 @use "./component/mainVisual";
 @use "./component/concept";

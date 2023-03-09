@@ -15,12 +15,21 @@
 	<script defer src="./js/main.js"></script>
 </head>
 <body>
+	<div id="js_loading" class="loading">
+		<div class="loading_container">
+			<div class="inner">
+				<img id="js_loading_img" class="loading_img" src="./images/logo_loading.png" alt="あざみ庵 白浜">
+				<p id="js_loading_text" class="loading_text">読み込み中...</p>
+			</div>
+		</div>
+	</div>
+
 	<div class="svg_container">
 		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<symbol viewBox="0 0 512 512" id="icon_link">
-				<path class="st0" d="M96,0v416h416V0H96z M472,376H136V40h336V376z"></path>
-				<polygon class="st0" points="40,472 40,296 40,136 40,96 0,96 0,512 416,512 416,472 376,472 "></polygon>
-				<polygon class="st0" points="232.812,312.829 350.671,194.969 350.671,279.766 390.671,279.766 390.671,126.688 237.594,126.688 237.594,166.688 322.39,166.688 204.531,284.547"></polygon>
+				<path d="M96,0v416h416V0H96z M472,376H136V40h336V376z"></path>
+				<polygon points="40,472 40,296 40,136 40,96 0,96 0,512 416,512 416,472 376,472 "></polygon>
+				<polygon points="232.812,312.829 350.671,194.969 350.671,279.766 390.671,279.766 390.671,126.688 237.594,126.688 237.594,166.688 322.39,166.688 204.531,284.547"></polygon>
 			</symbol>
 		</svg>
 	</div>
@@ -29,7 +38,9 @@
 		<div class="c-wrapper">
 			<div class="l-header__inner" data-sal="slide-down" style="--sal-duration: 0.8s;">
 				<div class="l-header-logo">
-					<p class="name">あざみ庵 白浜</p>
+					<a href="#top" class="name">
+						<img src="./images/logo_header.png" alt="あざみ庵 白浜">
+					</a>
 				</div>
 				<a href="#room" class="l-header__reservation">
 					ご宿泊予約
@@ -43,7 +54,7 @@
 			<div class="c-mainVisual__sliderBox">
 				<ul class="c-mainVisual__slider js-mainVisual-slider">
 					<li>
-						<img src="./images/mainVisual_slide_img_1.jpg" alt="">
+						<img id="js_mainVisual_first_img" src="./images/mainVisual_slide_img_1.jpg" alt="">
 					</li>
 					<li>
 						<img src="./images/mainVisual_slide_img_2.jpg" alt="">
@@ -57,7 +68,7 @@
 				</ul>
 			</div>
 			<h1 class="c-mainVisual__title" data-sal="fade" style="--sal-duration: 2s; --sal-delay: 0.2s">
-				<span class="inner">あざみ庵<span class="area">白浜</span></span>
+				<img src="./images/logo_mainVisual.png" alt="あざみ庵 白浜">
 			</h1>
 			<div class="c-mainVisual_scroll" data-sal="slide-down" style="--sal-duration: 0.8s; --sal-delay: 1s">
 				<a href="#concept">
@@ -142,7 +153,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="p-information-item">
+						<div class="p-information-item only_pc only_tb">
 							<h3 class="title">宿泊予約</h3>
 							<div class="link">
 								<ul>
@@ -235,6 +246,29 @@
 							</li>
 						</ul>
 					</div>
+					<div class="p-information-item only_sp">
+						<h3 class="title">宿泊予約</h3>
+						<div class="link">
+							<ul>
+								<li>
+									<a href="https://www.airbnb.jp/rooms/784482862888793218" target="_blank">
+										airbnb
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.booking.com/hotel/jp/azamian-301.ja.html" target="_blank">
+										Booking.com
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 
 				<div class="p-container" data-sal="fade" style="--sal-duration: 2.5s;">
@@ -267,7 +301,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="p-information-item">
+						<div class="p-information-item only_pc only_tb">
 							<h3 class="title">宿泊予約</h3>
 							<div class="link">
 								<ul>
@@ -365,6 +399,30 @@
 							</li>
 						</ul>
 					</div>
+					<div class="p-information-item only_sp">
+						<h3 class="title">宿泊予約</h3>
+						<div class="link">
+							<ul>
+								<li>
+									<a href="https://www.airbnb.jp/rooms/784487528703957636" target="_blank">
+										airbnb
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.booking.com/hotel/jp/azamian-302.ja.html" target="_blank">
+										Booking.com
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</section>
@@ -383,175 +441,265 @@
 						</h2>
 					</div>
 					<div class="p-nearByFacilities-list">
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">天然温泉 長生の湯</p>
+								<p class="name">
+									<a href="" target="_blank">
+										天然温泉 長生の湯
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-42-3010">0739-42-3010</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町2763<br>
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									由緒ある天然温泉を贅沢に【 源泉かけ流し 】<br>
+									日本三古湯と称される「白浜温泉」は、古来より治療・静養に効果がある湯治場として愛されています。<br>
+									肌に優しく滑らかな泉質で、様々な効能があります。長生の湯は、長生源泉と東谷源泉の２つから引湯しております。<br>
+									夏期には比較的温度の低い東谷源泉（約60度）をメインに、冬期は高温の長生源泉（78度）をメインに使い分けながら源泉掛け流しを維持しております。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1125404221975!2d135.3574583!3d33.680150000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a123204b08b3%3A0x67108bb1b1f00e17!2z5aSp54S25rip5rOJIOmVt-eUn-OBrua5rw!5e0!3m2!1sja!2sjp!4v1678087194449!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">めん吉</p>
+								<p class="name">
+									<a href="" target="_blank">
+										めん吉
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:050-5869-0224">050-5869-0224</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町2763 長生の湯
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									こだわりの和歌山ラーメンをお召し上がりください<br>
+									和歌山は醤油発祥の地であり、ラーメンもやはり醤油ベースとした味が多く、当然ながらめん吉も醤油ラーメンが基本です。<br>
+									醤油にとんこつと鶏ガラをブレンドしたスープを加えた、とんこつ醤油、その他アレンジスープもございます。「めん吉」は長生の湯と同じく、昭和の趣ある庵風の麺房です。<br>
+									お風呂上がりに、冷たいお飲み物をお供に、「めん吉」の和歌山ラーメンをお召し上がりください。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1102002436464!2d135.3572709!3d33.680210599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a13d31c4b91d%3A0xda4f4032a01d291b!2z44KB44KT5ZCJ!5e0!3m2!1sja!2sjp!4v1678087916499!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">居酒屋卯八</p>
+								<p class="name">
+									<a href="" target="_blank">
+										居酒屋卯八
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-43-2387">0739-43-2387</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町2927−105
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									居酒屋「卯八」は、和歌山の新鮮な素材を使った一品料理で四季折々の味をお楽しみいただけるお店です。<br>
+									いつも新鮮な活魚を揃え、この店でしか味わえない味を目指しております。<br>
+									ご家族やお仲間でくつろいでいただけるように、工夫をこらした創作料理の数々を、笑顔のおもてなしでご提供いたします。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.155338775155!2d135.3522806!3d33.6790417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a119c200e0eb%3A0xeacf9a023dafb6bd!2z5bGF6YWS5bGL5Y2v5YWr!5e0!3m2!1sja!2sjp!4v1678088021413!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">まる川</p>
+								<p class="name">
+									<a href="" target="_blank">
+										まる川
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-43-2211">0739-43-2211</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町2525−5
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									当店のモットーは<br>
+									（1）お子様からご年配の方まで、ご家族の団欒・お食事を楽しんでいただくこと<br>
+									（2）地元の魚介・季節の珍味を取り揃え、皆様に美味しく召し上がっていただくこと<br>
+									ご来店いただいた皆様、おなかいっぱいの笑顔で満たすことができればと思っております。ご家族、お友達同士、はたまた接待など、様々なお食事会にご利用くださいませ。店主はじめスタッフ一同、心よりお待ち申し上げております。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1531106501066!2d135.3499714!3d33.6790994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11a34421d79%3A0xa6c5b68ed2ae6641!2z44G-44KL5bed!5e0!3m2!1sja!2sjp!4v1678088077568!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">ファミリーマート 白浜垣谷店</p>
+								<p class="name">
+									<a href="" target="_blank">
+										ファミリーマート 白浜垣谷店
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-82-3848">0739-82-3848</a><br>
 										住所: 〒649-2200 和歌山県西牟婁郡白浜町 字垣谷 1289
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									一番近いコンビニです。
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9859878131965!2d135.3529547!3d33.68342700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a118009f7b11%3A0x48a98ca4b29bfffa!2z44OV44Kh44Of44Oq44O844Oe44O844OIIOeZvea1nOWeo-iwt-W6lw!5e0!3m2!1sja!2sjp!4v1678088134864!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">キリンヤ</p>
+								<p class="name">
+									<a href="" target="_blank">
+										お好み焼き　キリンヤ
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-43-0894">0739-43-0894</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町3300−16
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									すべて注文を受けてから作り始めます。<br>
+									長年焼き続けているお母さんと二代目の娘が、まぜ方、焼き方にこだわって焼いています。週末には県外からのお客様も多く、その殆どがリピーターです。<br>
+									【おいしさのひみつ】<br>
+									ざく切りにしたグリーンボールと秘伝の生地、その他の素材も一つ一つにこだわりあり。具がたくさん入ってお好み焼きの味を一層引き立てます。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.9780436390174!2d135.3500841!3d33.683632700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11c31345e37%3A0xbdbda06bb4986bde!2z44Kt44Oq44Oz44Ok!5e0!3m2!1sja!2sjp!4v1678088190165!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">福菱/Kagerou Café/かげろうカフェ</p>
+								<p class="name">
+									<a href="" target="_blank">
+										福菱/Kagerou Café/かげろうカフェ
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-42-3129">0739-42-3129</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町1279−3
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									店舗の奥に海が見えるテラス席を設けたカフェ「Kagerou Café」。<br>
+									ここでしか味わうことのできない本店限定の「生かげろう」やケーキ等の冷蔵商品もカフェでお召し上がり頂く事ができます。<br>
+									メニューとしては、ヒレカツサンドやボロネ－ゼ、ふわとろのたまごサンド等の軽食。<br>
+									また、8時～10時半までのモーニングメニューに続き、ランチメニューもございます。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.965785505063!2d135.35421209999998!3d33.6839501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11f30df4923%3A0xf57c28e12630d7c6!2z56aP6I-xL0thZ2Vyb3UgQ2Fmw6kv44GL44GS44KN44GG44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1678088228644!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">FISHERMEN AND BUTCHER</p>
+								<p class="name">
+									<a href="" target="_blank">
+										FISHERMEN AND BUTCHER
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-43-3636">0739-43-3636</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									地魚と熊野牛、紀州和華牛をメインに地元和歌山の<br>
+									【美味しい】をお届けする焼肉居酒屋です。<br>
+									2020.7.17オープン<br>
+									PM18:00〜PM23:00<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.004189349915!2d135.3472879!3d33.682955699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a1ea710b797f%3A0x8a0ff7fc917a5402!2sFISHERMEN%20AND%20BUTCHER!5e0!3m2!1sja!2sjp!4v1678088265575!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">おたべやす</p>
+								<p class="name">
+									<a href="" target="_blank">
+										おたべやす
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-43-7208">0739-43-7208</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									気さくな店主の方が１人できりもりしています。<br>
+									アットホームで地元の人にも愛されています。価格も控えめです。<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0018374135057!2d135.3473315!3d33.683016599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11d2252bd9b%3A0x13ed9310da06777c!2z44GK44Gf44G544KE44GZ!5e0!3m2!1sja!2sjp!4v1678088303509!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">大晏</p>
+								<p class="name">
+									<a href="" target="_blank">
+										大晏
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										TEL: <a href="tel:0739-42-3245">0739-42-3245</a><br>
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									水曜日休みです。<br>
+									白浜の夜はここで。そう言っても過言でないほど、舌の記憶に残る昔風の小粋なお店です。<br>
+									大将の手際の良さもそうですが、おいしい数々の料理からお寿司まで旅路の美味しいお店では間違いない<br>
 								</p>
 							</div>
 							<div class="imgBox">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.0007869579367!2d135.3474322!3d33.6830438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6007a11d2252bd9b%3A0x714388fa5852ca36!2z5aSn5pmP!5e0!3m2!1sja!2sjp!4v1678088361792!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
-						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 2.5s">
+						<div class="c-nearByFacilities-item" data-sal="fade" style="--sal-duration: 0.6s">
 							<div class="textBox">
-								<p class="name">すゞめ</p>
+								<p class="name">
+									<a href="" target="_blank">
+										すゞめ
+										<svg viewBox="0 0 512 512" class="icon_link">
+											<use xlink:href="#icon_link"></use>
+										</svg>
+									</a>
+								</p>
 								<p class="text">
 									<span class="info">
 										住所: 〒649-2211 和歌山県西牟婁郡白浜町3306−1
 									</span>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。<br>
-									ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。ここに説明文が入ります。
+									焼き鳥居酒屋です。<br>
+									おでんもあります。どくだみ茶もあります。<br>
 								</p>
 							</div>
 							<div class="imgBox">
@@ -563,7 +711,7 @@
 			</div>
 		</section>
 
-		<section class="c-access" data-sal="fade" style="--sal-duration: 2.5s">
+		<section class="c-access" data-sal="fade" style="--sal-duration: 1.5ss">
 			<div class="c-wrapper">
 				<div class="p-container">
 					<div class="p-room-text-box">

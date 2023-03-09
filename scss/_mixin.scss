@@ -22,3 +22,9 @@
       @content;
     }
 }
+
+@mixin pc {
+  @media (min-width: ('1025px')) {
+    @content;
+  }
+}

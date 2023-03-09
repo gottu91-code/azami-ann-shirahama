@@ -1,0 +1,1 @@
+.loading{position:fixed;z-index:5000;top:0;left:0;width:100%;height:100%;background-color:#111;display:grid;place-content:center;color:#fff}.loading_container .inner{position:relative;z-index:0}
