@@ -135,24 +135,22 @@
         }
         &.slick-prev {
             left: 0;
-            translate: -50% -50%;
+            transform: translate(-50%, -50%);
             @include sp {
-                translate:  -25% -50%;
+                transform: translate(-25%, -50%);
             }
             &::after {
-                rotate: -45deg;
-                translate: -50% -50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
             }
         }
         &.slick-next {
             right: 0;
-            translate: 50% -50%;
+            transform: translate(50%, -50%);
             @include sp {
-                translate:  25% -50%;
+                transform: translate(25%, -50%);
             }
             &::after {
-                rotate: 135deg;
-                translate: -50% -50%;
+                transform: translate(-50%, -50%) rotate(135deg);
             }
         }
     }

@@ -88,4 +88,6 @@ function observeMainVisual() {
 }
 observeMainVisual();
 
-sal();
+sal({
+  threshold: 0.2
+});
